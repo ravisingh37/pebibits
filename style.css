@@ -11,11 +11,12 @@
     padding: 5px 10px;
     }
 nav{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;}
+    padding: 15px;
+    }
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -52,19 +53,20 @@ nav ul li a:hover{
     margin-top: 20px;
 
 }
-button{
-   font-size: 18px;
-   padding: 15px 25px;
+.button{
+   font-size: 15px;
+   padding: 18px 28px;
    color: white;
    background:black;
-   border:  solid 2px;
-   border-radius: 50px 50px 50px 50px ;
-   box-shadow: 1px 3px 6px;
+   border: white 1px;
+   border-radius: 50px;
+   box-shadow: 1px 1px 8px;
    transition: 0.5s ease-in-out;
 }
 button:hover{
      transition: 0.5s ease-in-out;
      border: solid 1px brown;
+     background-color: #201f1f;
      color: brown;
 }
 .earth {
@@ -74,7 +76,7 @@ button:hover{
     margin-top: 25px;
 }
 .earth img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto; 
 }
 .mission_text{
@@ -104,11 +106,10 @@ font-weight: 800;
     margin-top: 60px;
     margin-left: 380px;
     margin-right: 380px;
-
 }
 .offer{
     background-color: #cd2526;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-top: 30px;
 }
@@ -149,13 +150,215 @@ nav ul li:hover .dropdown_company{
 }
 nav ul li:hover .dropdown_company li{
     display: block;
-    margin: 10px;
-    background-color: ;
-    
+    margin: 10px 0;
+    background-color: ;    
 }
 nav ul li:hover .dropdown_company li a{
     color: black;
+    }
+    .dropdown_company ul li:hover{
+        background-color: #cd2526;
+        background-position: 100%;
+    }
+ .item1{
+   grid-area: I1;
+   background-image: image;
+ }
+ .item2{
+   grid-area: I2;
+ }
+ .item3{
+   grid-area: I3;
+ }
+ .item4{
+   grid-area: I4;
+ }
+ .item5{
+   grid-area: I5;
+ }.item6{
+   grid-area: I6;
+ }
+ .grid img{
+   width: 449.5px;
+   height: 400px; 
+   margin: 0;
+   padding: 0;
+   }
+   .grid{
+    width: 100%;
+    display: grid;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    grid-template-areas: "I1 I2 I3"
+                         "I4 I5 I6"; 
+   }
+   .clients h1{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 900;
+    color: #4f5152;
+    letter-spacing: 1px;
+   }
+   .clients h4{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    color: #cd2526;
+    letter-spacing: 2px;
+   }
+   .clients_details{
+    margin: 100px 180px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    gap: 25px;
+   }
+.menno_malta{
     
-    
+    text-align: center;
+    width: 350px;
 }
+.menno_malta h3{
+    padding-top: 15px;
+    font-size: 24px;
+    color: #4f5152;
+    font-weight: 900;
+}
+   .clients_image{
+    border-radius: 50%;
+   }
+  .menno_malta h4{
+    color: #4f5152;
+    padding-top: 15px;
+    justify-items: center;
+  }
+  .menno_malta p{
+    margin-top: 20px;
+    line-height: 30px;
+    color: #4f5152;
+    justify-content: center;
+    font-size: 14px;
+  }
+  button{
+    padding: 10px 12px;
+    background-color: #4f5152;
+    border-radius: 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .Portfolio_image{
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .Portfolio_image img{
+    width: 100%;
+    height: 250px;
+    display: block;
+  }
+  .port{
+    background-color: #cd2526;
+    position: absolute;
+    top: 70px;
+    left: 560px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: white;
+    border: transparent;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+       
+  }
+  .port:hover{
+    background-color: white;
+    border-color: white;
+  }
+  .read{
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .start{
+    background-color: #282f3a;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: white;
+    word-spacing: 5px;
+    line-height: 38px;
+    letter-spacing: 2px;
+  }
+  .contact{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #fff;
+    border-color: white;
+    background-color: #282f3a;
+  }
+    .contact:hover{
+      background-color: white;
+      color: #282f3a;
+    }
+    .sign_container{
+      margin: 58px 100px 60px 100px;
+      display: flex;
+      gap: 120px;
+    }
+    .sign_up h3{
+      font-family: 'Kanit', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    
+    }
+    .sign_up p{
+      font-size: 15px;
+    }
+    .subscribe{
+      background-color: #f4f4f4;
+      height: 50px;
+      width: 200px;
+      padding: 10px;
+      padding-top: 0;
+      border: 1px solid;
+      border-color: #ddd;
+      color: #444;
+    }
+    input{
+      height: 50px;
+      width: 200px;
+      background-color: #f4f4f4;
+      border: 1px solid;
+      border-color: #ddd;
+      padding-left: 10px;
+     }
+     .footer{
+      background-color: #282f3a;
+      padding-bottom: 50px;
+      }
+    .footer_img{
+      margin-top: 50px;
+      margin-left: 60px;
+    }
+    .footer_text{
+      margin-top: 20px;
+      margin-left: 60px;
+      margin-bottom: 50px;
+      color: white;
+    }
+
+    
+
+   
 
